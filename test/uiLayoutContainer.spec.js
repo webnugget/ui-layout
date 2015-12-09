@@ -73,16 +73,16 @@ describe('Directive: uiLayoutContainer', function () {
     expect(angular.element(afterContainer).hasClass('animate-column')).toEqual(true);
   });
 
-  it('should not be animated when the attribute is not set', function() {
+  it('should be animated when the attribute is not set', function() {
     element = createDirective({ beforeContainer: true, afterContainer: false});
     var divs = element.find('div'),
       beforeContainer = divs[0],
       afterContainer = divs[2];
-    expect(angular.element(beforeContainer).hasClass('animate-column')).toEqual(false);
-    expect(angular.element(afterContainer).hasClass('animate-column')).toEqual(false);
+    expect(angular.element(beforeContainer).hasClass('animate-column')).toEqual(true);
+    expect(angular.element(afterContainer).hasClass('animate-column')).toEqual(true);
   });
 
-  it('should not be animated when the attribute is set to a value different from true', function() {
+  it('should not be animated when the attribute is set to false', function() {
     element = createDirective({ beforeContainer: true, afterContainer: false, animate: 'animate="false"'});
     var divs = element.find('div'),
       beforeContainer = divs[0],

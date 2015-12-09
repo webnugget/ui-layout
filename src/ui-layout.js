@@ -679,7 +679,7 @@ angular.module('ui.layout', [])
         if(!element.hasClass('stretch')) element.addClass('stretch');
         if(!element.hasClass('ui-splitbar')) element.addClass('ui-splitbar');
 
-        if (ctrl.animate === 'true') {
+        if (ctrl.animate !== 'false') {
           var animationClass = ctrl.isUsingColumnFlow ? 'animate-column' : 'animate-row';
           element.addClass(animationClass);
         }
@@ -921,7 +921,7 @@ angular.module('ui.layout', [])
                 if(!element.hasClass('stretch')) element.addClass('stretch');
                 if(!element.hasClass('ui-layout-container')) element.addClass('ui-layout-container');
 
-                if (ctrl.animate === 'true') {
+                if (ctrl.animate !== 'false') {
                   var animationClass = ctrl.isUsingColumnFlow ? 'animate-column' : 'animate-row';
                   element.addClass(animationClass);
                 }
