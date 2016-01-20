@@ -425,7 +425,7 @@ angular.module('ui.layout', [])
         el = splitter.element[0].children[0];
       } else {
         splitter = ctrl.containers[index - 1];
-        el = splitter.element[0].children[1];
+        el = splitter.element[0].children[2];
       }
 
       $timeout(function(){
@@ -717,7 +717,7 @@ angular.module('ui.layout', [])
 
           if(previousSplitbar !== null) {
             prevSplitbarBeforeButton = angular.element(previousSplitbar.element.children()[0]);
-            prevSplitbarAfterButton = angular.element(previousSplitbar.element.children()[1]);
+            prevSplitbarAfterButton = angular.element(previousSplitbar.element.children()[2]);
           }
 
           if(ctrl.isUsingColumnFlow) {
@@ -777,7 +777,7 @@ angular.module('ui.layout', [])
 
           if(nextSplitbar !== null) {
             nextSplitbarBeforeButton = angular.element(nextSplitbar.element.children()[0]);
-            nextSplitbarAfterButton = angular.element(nextSplitbar.element.children()[1]);
+            nextSplitbarAfterButton = angular.element(nextSplitbar.element.children()[2]);
           }
 
           if(ctrl.isUsingColumnFlow) {
