@@ -52,6 +52,9 @@ angular.module('ui.layout', [])
     if (opts.disableMobileToggle) {
       $element.addClass('no-mobile-toggle');
     }
+    if (!opts.showHandle) {
+      $element.addClass('no-handle');
+    }
 
     // Initial global size definition
     opts.sizes = opts.sizes || [];

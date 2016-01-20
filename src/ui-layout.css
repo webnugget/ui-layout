@@ -132,6 +132,10 @@
   display: none;
 }
 
+.no-handle .ui-splitbar-handle {
+  display: none;
+}
+
 @media only screen and (max-device-width: 480px) {
   .no-mobile-toggle .ui-splitbar-icon {
     display: none;
