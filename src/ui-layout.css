@@ -128,7 +128,7 @@
 }
 
 /* Allow disabling of icons */
-.no-toggle .ui-splitbar-icon {
+.no-toggle .ui-splitbar-toggle {
   display: none;
 }
 
