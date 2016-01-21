@@ -828,7 +828,7 @@ angular.module('ui.layout', [])
         });
 
         element.on('mousedown touchstart', function(e) {
-          if (e.button === 0 || type === 'touchstart') {
+          if (e.button === 0 || e.type === 'touchstart') {
             // only trigger when left mouse button is pressed:
             ctrl.movingSplitbar = scope.splitbar;
             ctrl.processSplitbar(scope.splitbar);
